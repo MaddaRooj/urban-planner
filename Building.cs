@@ -4,6 +4,7 @@ namespace urban_planner
 {
     public class Building
     {
+        public string name {get; set;}
         private string _designer = "Addam Joor";
         private DateTime _dateConstructed;
         private string _address;
@@ -18,9 +19,10 @@ namespace urban_planner
                 return Width * Depth * (3*Stories);
             } 
         }
-        public Building(string address) 
+        public Building(string address, string buildingName) 
         {
             _address = address;
+            name = buildingName;
         }
 
         public void Construct()
@@ -42,6 +44,5 @@ namespace urban_planner
             Console.WriteLine($"Owned by {_owner}");
             Console.WriteLine($"{Volume} cubic meters of space");
         }
-
     }
 }
