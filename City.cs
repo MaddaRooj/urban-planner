@@ -27,7 +27,7 @@ namespace urban_planner
             Console.WriteLine("");
             foreach (Building building in BuildingsContained)
             {
-                Console.WriteLine($"{building.name} is at some address.");
+                Console.WriteLine($"{building.name} is at {building.address}.");
             }
         }
     }

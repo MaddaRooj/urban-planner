@@ -7,7 +7,7 @@ namespace urban_planner
         public string name {get; set;}
         private string _designer = "Addam Joor";
         private DateTime _dateConstructed;
-        private string _address;
+        public string address;
         private string _owner;
         public int Stories { get; set; }
         public double Width { get; set; }
@@ -21,7 +21,7 @@ namespace urban_planner
         }
         public Building(string address, string buildingName) 
         {
-            _address = address;
+            this.address = address;
             name = buildingName;
         }
 
@@ -37,7 +37,7 @@ namespace urban_planner
         public void Info()
         {
             Console.WriteLine("");
-            Console.WriteLine(_address);
+            Console.WriteLine(address);
             Console.WriteLine("--------------------");
             Console.WriteLine($"Designed by {_designer}");
             Console.WriteLine($"Constructed on {_dateConstructed}");
