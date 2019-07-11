@@ -4,11 +4,11 @@ namespace urban_planner
 {
     public class Building
     {
-        public string name {get; set;}
         private string _designer = "Addam Joor";
         private DateTime _dateConstructed;
-        public string address;
         private string _owner;
+        public string name {get; set;}
+        public string address;
         public int Stories { get; set; }
         public double Width { get; set; }
         public double Depth { get; set; }

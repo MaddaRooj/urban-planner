@@ -6,14 +6,6 @@ namespace urban_planner
     {
         static void Main(string[] args)
         {
-            Building NashvilleSoftwareSchool = new Building("500 Interstate Blvd", "NSS"){
-                Width = 500,
-                Depth = 500,
-                Stories = 27,
-            };
-            NashvilleSoftwareSchool.Construct();
-            NashvilleSoftwareSchool.Purchase("John Wark");
-            NashvilleSoftwareSchool.Info();
 
             Building Home = new Building("1537 Mohawk Trail", "My house"){
                 Width = 50,
@@ -32,6 +24,15 @@ namespace urban_planner
             MomsHouse.Construct();
             MomsHouse.Purchase("William Joor");
             MomsHouse.Info();
+            
+            Building NashvilleSoftwareSchool = new Building("500 Interstate Blvd", "NSS"){
+                Width = 500,
+                Depth = 500,
+                Stories = 27,
+            };
+            NashvilleSoftwareSchool.Construct();
+            NashvilleSoftwareSchool.Purchase("John Wark");
+            NashvilleSoftwareSchool.Info();
 
             City nashville = new City("Nashville", "David Briley", 1806);
             nashville.ConstructNewBuilding(NashvilleSoftwareSchool);
